@@ -2,7 +2,7 @@
   <h1>JavaScript: Variables & Data Types</h1>
 </div>
 
-[<< Roadmap](../../README.md) | [Day 2: Booleans operators date >>](../Day-02-Loop/README.md)
+[<< Roadmap](../../README.md) | [Day 2: Booleans operators date >>](../Day-02-Booleans-Operators-Date/README.md)
 
 ---
 
@@ -299,4 +299,4 @@ Syarat: minimal gunakan 1 template literal (`` ` `` backtick), dan minimal satu 
 
 ---
 
-[<< Roadmap](../../README.md) | [Day 2: Loop >>](../Day-02-Loop/README.md)
+[<< Roadmap](../../README.md) | [Day 2: Day-02-Booleans-Operators-Date >>](../Day-02-Booleans-Operators-Date/README.md)
