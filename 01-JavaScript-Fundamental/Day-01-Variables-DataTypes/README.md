@@ -290,8 +290,8 @@ Syarat: minimal gunakan 1 template literal (`` ` `` backtick), dan minimal satu 
 
 # ✅ Definition of Done
 
-- [ ] Semua soal Level 1 selesai dan outputnya sesuai
-- [ ] Minimal 3 dari 4 soal Level 2 selesai, dan hasil analisisnya ditulis di `notes.md`
+- [✔] Semua soal Level 1 selesai dan outputnya sesuai
+- [] Minimal 3 dari 4 soal Level 2 selesai, dan hasil analisisnya ditulis di `notes.md`
 - [ ] Minimal 2 dari 3 soal Level 3 selesai
 - [ ] Kedua bug di section Debugging bisa dijelaskan sendiri tanpa lihat kode
 - [ ] Mini project jalan dan formatnya rapi
