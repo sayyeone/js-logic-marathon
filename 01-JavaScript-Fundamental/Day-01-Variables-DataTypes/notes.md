@@ -29,18 +29,42 @@ const user2 = user1;
 
 ```
 
-representasi model =
-user1
-   │
-   ▼
-┌──────────────┐
-│ nama: Adis   │
-└──────────────┘
-   ▲
-   │
-user2
-
 logika inti dari kode diatas = kita membuat 2 objek yaitu user1 dan user2 yg mana segala sesuatu yg dimiliki user1 akan dimiliki user2 juga *jika user2 menambahkan atributnya maka user1 juga ikut berubah*
 
 ## cara pemilihan let/const
 - selalu jadikan default semuanya menjadi const jika belum ada alasan apakah variabelnya akan berubah ubah
+
+## penamaan variabel di JS
+variabel bisa diberi nama dengan 2 cara, camel case dan snake case
+
+- js memakai standar camel case
+- jika sebuah nilai dianggap sebagai konstanta global, env variabel, dan konfigurasi maka cara penulisannya menjadi
+*UPPER_SNAKE_CASE*
+
+```js
+const MAX_RETRY = 5;
+const API_URL = "...";
+
+```
+
+## penamaan variabel boolean
+boolean lebih menjawab ke pertanyaan jika dimasukkan ke pernyataan if statement maupun yg lainnya.
+*Usahakan nama variabelnya terdengar seperti pertanyaan.*
+
+**CONTOH DARI PENAMAAN**
+is, has, can, should, was, did
+
+```js
+const isLoading = true;
+const hasError = false;
+```
+- number = memakai representasi kata pada umumnya
+- array = biasa dalam bentuk jamak
+- object = bentuk tunggal
+- function = kata kerja
+- boolean = pertanyaan
+
+## primiteve data types
+number, string, boolean, undefined, null, symbol, bigint
+
+
