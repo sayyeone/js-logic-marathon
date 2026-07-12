@@ -82,4 +82,40 @@ console.log(typeof age)
 - pengecualian ketika variabel yg belum memiliki value maka outputnya undefined
 - jika variabel memiliki value null maka outputnya object
 
+## operators
+simbol yang meminta js melakukan suatu operasi terhadap satu atau lebih operand
 
+*arithmetic operators*
+- penjumlahan (+)
+- pengurangan (-)
+- perkalian (*)
+- modulo (%)
+  sisa bagi => 10 dibagi 3 = maka 9 dan masih tersisa 1 lagi
+- div (/)
+- pangkat (angka**)
+
+## operand
+5 + 3 
+- angka 5 merupakan operan kiri number
+- angka 3 merupakan operan kanan number
+
+*cara berpikirnya*
+1. jika operand kiri + kanan = number maka tambah angka langusng
+2. jika operand kiri + kanan = string maka gunakan concatenation
+
+## comparision operator
+- loose equality (==) hanya membandingkan nilai dari operandnya
+- strict equality (===) membandingkan nilai dan tipe data dari kedua operand
+
+*best practice*
+pakai strict equality (===)
+
+contoh
+```js
+0 == "0" // true, karena hanya membandingkan value bukan tipe datanya
+0 === "0" //false, membandingkan value beserta tipe datanya
+0 === false // false, membandingkan juga sama 
+```
+
+*arithmetic operator (-)*
+operator ini tidak tahu cara menggabungkan string, sehingga jika ada salah 1 operand yg string maka dia dikonversi menjadi number 
