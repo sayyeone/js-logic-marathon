@@ -67,4 +67,19 @@ const hasError = false;
 ## primiteve data types
 number, string, boolean, undefined, null, symbol, bigint
 
+- semua angka dalam js disimpan dalam bentuk number, ketika 0.1 + 0.2
+maka hasilnya 0.3000004 karena js lansung menampilkan representasi yg dihasilkan tanpa pembulatan
+
+## typeof
+untuk mengetahui tipe data apa yg dimiliki oleh variabel tersebut
+
+```js
+let age = 20;
+console.log(typeof age)
+
+```
+
+- pengecualian ketika variabel yg belum memiliki value maka outputnya undefined
+- jika variabel memiliki value null maka outputnya object
+
 

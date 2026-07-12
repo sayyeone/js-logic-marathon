@@ -35,4 +35,8 @@ console.log(pi * rad ** 2);
 let celcius = 30;
 console.log((celcius * 9/5) + 32);
 
+// testing tambahan
+console.log(typeof null);
+
+
 
