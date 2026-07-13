@@ -119,3 +119,27 @@ contoh
 
 *arithmetic operator (-)*
 operator ini tidak tahu cara menggabungkan string, sehingga jika ada salah 1 operand yg string maka dia dikonversi menjadi number 
+
+*arithmetic operator (+)*
+hanya operand bertipe data string yg tidak diubah dan menjadi concatenation nantinya
+
+- operand yg bertipe data boolean diubah menjadi representasi angka sesuai dengan statusnya
+
+| Expression    | Yang terjadi            |
+| ------------- | ----------------------- |
+| `"5" + 3`     | String menang → `"53"`  |
+| `"5" - 3`     | Semua jadi Number → `2` |
+| `10 + true`   | Boolean → Number → `11` |
+| `10 - true`   | Boolean → Number → `9`  |
+| `true + true` | `1 + 1` → `2`           |
+
+*tabel operator*
+| Operator | Bisa Concatenation? | Kalau ketemu String    |
+| -------- | ------------------- | ---------------------- |
+| `+`      | ✅ Ya                | String menang → concat |
+| `-`      | ❌ Tidak             | String → Number        |
+| `*`      | ❌ Tidak             | String → Number        |
+| `/`      | ❌ Tidak             | String → Number        |
+| `%`      | ❌ Tidak             | String → Number        |
+| `**`     | ❌ Tidak             | String → Number        |
+

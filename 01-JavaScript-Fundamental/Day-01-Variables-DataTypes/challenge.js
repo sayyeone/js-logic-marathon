@@ -1,1 +1,1 @@
-console.log(10 + true);
+console.log(1 / false);
