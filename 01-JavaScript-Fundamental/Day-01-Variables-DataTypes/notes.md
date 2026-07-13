@@ -163,3 +163,13 @@ NaN
 
 ### number family
 10, 20, 3.14, -8, NaN
+
+### insight
+hardcoded = kita langsung menuliskan nilai secara explisit 
+contoh
+```js
+if (password === "admin123") {
+  isLogin = true
+};
+```
+bukan best practice karena dia langsung menyimpan password didalam kodingannya

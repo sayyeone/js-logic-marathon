@@ -38,5 +38,21 @@ console.log((celcius * 9/5) + 32);
 // testing tambahan
 console.log(typeof null);
 
-// LV 2
+// LV 3
+
+// 10
+let weight = 51;
+let height = 150;
+let bmi = weight / (height ** 2);
+console.log(bmi.toFixed(4));
+
+// 11
+let x = 5;
+let y = 10;
+
+x = x + y;
+
+
+
+
 
