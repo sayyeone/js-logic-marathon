@@ -1,1 +1,1 @@
-console.log(1 / false);
+console.log(typeof NaN);

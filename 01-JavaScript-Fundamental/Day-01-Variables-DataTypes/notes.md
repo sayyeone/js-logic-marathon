@@ -125,21 +125,41 @@ hanya operand bertipe data string yg tidak diubah dan menjadi concatenation nant
 
 - operand yg bertipe data boolean diubah menjadi representasi angka sesuai dengan statusnya
 
-| Expression    | Yang terjadi            |
-| ------------- | ----------------------- |
-| `"5" + 3`     | String menang → `"53"`  |
-| `"5" - 3`     | Semua jadi Number → `2` |
-| `10 + true`   | Boolean → Number → `11` |
-| `10 - true`   | Boolean → Number → `9`  |
-| `true + true` | `1 + 1` → `2`           |
+### 💡 Insight
 
-*tabel operator*
-| Operator | Bisa Concatenation? | Kalau ketemu String    |
-| -------- | ------------------- | ---------------------- |
-| `+`      | ✅ Ya                | String menang → concat |
-| `-`      | ❌ Tidak             | String → Number        |
-| `*`      | ❌ Tidak             | String → Number        |
-| `/`      | ❌ Tidak             | String → Number        |
-| `%`      | ❌ Tidak             | String → Number        |
-| `**`     | ❌ Tidak             | String → Number        |
+Type coercion di JavaScript tidak memiliki satu aturan yang berlaku untuk semua operator.
 
+Setiap operator memiliki aturan coercion-nya sendiri.
+
+- Operator `+` dapat melakukan penjumlahan atau concatenation.
+- Operator matematika lain (`-`, `*`, `/`, `%`, `**`) hanya melakukan operasi numerik, sehingga operand akan dikonversi ke Number jika memungkinkan.
+
+**inti dari operator => jika dia merupakan string maka kita tidak bisa melakukan operasi penjumlahan, maka hasil akhirnya hanya concatenation saja dan mengubahnya menjadi tipe data sesuai dengan operand kiri**
+
+## logical operator
+- && = kedua syarat harus terpenuhi
+- || = salah satu syarat harus terpenuhi
+- ! = kebalikan dari pernyataan yg kita punya
+
+## type conversion (explicit conversion)
+diubah oleh programmer yg menulis kodenya nanti
+
+- mengubah tipe data menjadi number
+```js
+Number("20");
+```
+maka outputnya akan keluar menjadi 20 dan tipe datanya number
+
+*perlakuan yg sama juga dengan tipe konversi dengan data yg berbeda nantinya*
+- String, Boolean, 
+
+### Falsy Values
+false
+0
+""
+null
+undefined
+NaN
+
+### number family
+10, 20, 3.14, -8, NaN

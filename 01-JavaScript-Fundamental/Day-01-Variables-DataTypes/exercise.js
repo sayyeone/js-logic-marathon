@@ -38,5 +38,5 @@ console.log((celcius * 9/5) + 32);
 // testing tambahan
 console.log(typeof null);
 
-
+// LV 2
 
