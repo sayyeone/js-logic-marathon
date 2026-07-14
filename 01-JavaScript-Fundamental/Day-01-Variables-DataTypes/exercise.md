@@ -46,4 +46,18 @@ const age = 20;
 age = 21;
 console.log(age);
 ```
-kode diatas akan 
+- kode diatas akan menghasilkan error karena variabel age yg harusnya konstan malah dideklarasikan ulang dengan nilai baru
+- yg menjadi akar masalah yaitu ketika kita assign ulang age = 21
+- yg bener menghapus age = 21, karena jika konstan tidak boleh diassign ulang
+
+### Bug 2
+```js
+let total = '10';
+let discount = 2;
+
+console.log(total - discount);
+console.log(total + discount);
+```
+- kode diatas akan menghasilkan output pertama berupa 8, karena operand di sisi kiri diubah menjadi number terlebih dahulu
+- kode diatas akan menghasilkan output kedua berupa 102, karen operasi penjumlahan melakukan konversi terhadap operand kanan yg berarti dia langsung di concat
+- yg benar dengan menghapus petik 1 di variabel total = 10, dan operasi number dapat dijalankan dengan benar
