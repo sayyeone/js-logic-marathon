@@ -166,6 +166,7 @@ NaN
 
 ### insight
 hardcoded = kita langsung menuliskan nilai secara explisit 
+
 contoh
 ```js
 if (password === "admin123") {
@@ -173,3 +174,13 @@ if (password === "admin123") {
 };
 ```
 bukan best practice karena dia langsung menyimpan password didalam kodingannya
+
+## Template Literal
+string yg diapit oleh backtick (`) digunakan untuk memanipulasi string dan output
+
+contoh
+```js
+const name = 'Adis';
+const greeting = `Hello, ${name}`;
+console.log(greeting);
+```
