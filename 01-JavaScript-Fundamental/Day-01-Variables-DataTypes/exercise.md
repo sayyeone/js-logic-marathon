@@ -38,3 +38,12 @@ typeof (true + 1) // number
 typeof (null) // object
 typeof (undefined) // undefined
 ```
+## Debugging
+
+### Bug 1
+```js
+const age = 20;
+age = 21;
+console.log(age);
+```
+kode diatas akan 
