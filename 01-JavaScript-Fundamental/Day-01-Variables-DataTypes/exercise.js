@@ -56,6 +56,12 @@ x = x - y;
 
 console.log(x, y);
 
-
+// 12
+let number = 1;
+if (number) {
+    console.log("truthy");
+} else {
+    console.log("falsy");
+}
 
 
