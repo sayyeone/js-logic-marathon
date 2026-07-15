@@ -72,3 +72,16 @@ logikanya hampir sama dengan if-else
 ### insight dari operator
 kalau kondisi yg dituliskan hanya mengembalikan nilai true/false maka cukup menembalikan hasilnya saja jika tidak mengoutputkan pesan
 
+## date object
+untuk memperoleh jam, tanggal, detik, pokoknya waktu
+
+*contoh membuat date*
+```js
+const now = new Date(); // outputnya menggambil waktu saat ini
+
+console.log(now.getFullYear()); // mengambil tahun
+console.log(now.getMonth()); // mengambil bulan
+console.log(now.getDay()); // mengambil hari
+```
+bulan dalam js disimpan dalam indeks array mulai dari 0 dst, best practicenya menambahkan + 1 di kode get month
+
