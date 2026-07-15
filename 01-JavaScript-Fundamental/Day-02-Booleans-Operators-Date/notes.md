@@ -73,7 +73,8 @@ logikanya hampir sama dengan if-else
 kalau kondisi yg dituliskan hanya mengembalikan nilai true/false maka cukup menembalikan hasilnya saja jika tidak mengoutputkan pesan
 
 ## date object
-untuk memperoleh jam, tanggal, detik, pokoknya waktu
+untuk memperoleh waktu bedasarkan objek yg disimpannya, ada:
+year, month, date, day, hours, minutes, second, milisecond
 
 *contoh membuat date*
 ```js
@@ -84,6 +85,11 @@ console.log(now.getMonth()); // mengambil bulan
 console.log(now.getDay()); // mengambil hari
 ```
 bulan dalam js disimpan dalam indeks array mulai dari 0 dst, best practicenya menambahkan + 1 di kode get month
+
+*membuat date dengan parameter didalamnya*
+```js
+const birthday = new Date("2005-09-12"); // dari string 
+```
 
 ### insight type coercion
 operator (==) mengubah tipe data secara otomatis agar setara, dalam kasusnya null dan undefined dianggap setara

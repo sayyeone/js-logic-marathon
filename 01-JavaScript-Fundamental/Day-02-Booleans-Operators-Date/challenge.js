@@ -12,5 +12,8 @@ console.log(NaN === NaN);
 console.log(null === undefined)
 console.log('' == false) // true
 
+// object date
+const birthday = new Date("2006-07-22")
+console.log(birthday.getSeconds());
 
 
