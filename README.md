@@ -6,7 +6,7 @@
   <br><br>
   <img src="https://img.shields.io/badge/Focus-JS%20Fundamentals%20%2B%20Async%20%2B%20DOM-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
   <img src="https://img.shields.io/badge/Status-In%20Progress-yellow?style=flat-square">
-  <img src="https://img.shields.io/badge/Day-02-blue?style=flat-square">
+  <img src="https://img.shields.io/badge/Day-03-blue?style=flat-square">
 </div>
 
 ---

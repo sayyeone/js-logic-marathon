@@ -8,3 +8,9 @@ const now = new Date
 console.log(now.getDate());
 console.log(now.getDay());
 
+console.log(NaN === NaN);
+console.log(null === undefined)
+console.log('' == false) // true
+
+
+

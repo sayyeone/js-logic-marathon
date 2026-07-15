@@ -85,3 +85,5 @@ console.log(now.getDay()); // mengambil hari
 ```
 bulan dalam js disimpan dalam indeks array mulai dari 0 dst, best practicenya menambahkan + 1 di kode get month
 
+### insight type coercion
+operator (==) mengubah tipe data secara otomatis agar setara, dalam kasusnya null dan undefined dianggap setara
