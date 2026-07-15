@@ -58,3 +58,17 @@ maka mengembalikan Guest. karena proses tracingnya
 
 ### insight dari logical operator
 - default value pattern = mencegah aplikasi dari crash atau menampilkan teks aneh seperti null / undefined. ketika data yg diterima dari database / api ternyata kosong dengan menyediakan nilai cadangan.
+
+## ternary operator
+untuk menjalankan satu kondisi true dan false saja, bukan digunakan untuk kondisi yg terlalu banyak **hanya menghasilkan satu nilai**
+
+*penulisan = kondisi ? nilai jika true : nilai jika false*
+contoh
+```js
+let status = age >= 18 ? "Dewasa" : "Anak - anak";
+```
+logikanya hampir sama dengan if-else
+
+### insight dari operator
+kalau kondisi yg dituliskan hanya mengembalikan nilai true/false maka cukup menembalikan hasilnya saja jika tidak mengoutputkan pesan
+
