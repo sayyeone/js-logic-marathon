@@ -1,6 +1,6 @@
 <div align="center">
   <h1>JavaScript Bootcamp: Conditionals</h1>
-  <sub>Day 3 — JavaScript Fundamentals</sub>
+  <sub>Day 3 JavaScript Fundamentals</sub>
 </div>
 
 [<< Day 2: Boolean, Operator & Date](../Day-02-Booleans-Operators-Date/README.md) | [Day 4: Array >>](../Day-04-Array/README.md)
@@ -24,11 +24,11 @@
 
 # 📔 Day 3
 
-Day 2 udah bahas boolean dan ternary buat kondisi sederhana. Hari ini kita masuk ke cara program bikin keputusan yang lebih kompleks — beberapa cabang kondisi, kondisi bersarang, dan alternatif lain selain `if...else` yaitu `switch`.
+Day 2 udah bahas boolean dan ternary buat kondisi sederhana. Hari ini kita masuk ke cara program bikin keputusan yang lebih kompleks beberapa cabang kondisi, kondisi bersarang, dan alternatif lain selain `if...else` yaitu `switch`.
 
 ## if Statement
 
-Bentuk paling dasar — jalankan blok kode hanya kalau kondisinya `true`.
+Bentuk paling dasar jalankan blok kode hanya kalau kondisinya `true`.
 
 ```js
 const age = 20
@@ -78,7 +78,7 @@ Urutan kondisi itu penting. JavaScript mengecek dari atas ke bawah dan berhenti 
 ```js
 const score = 95
 
-// SALAH — urutan kebalik
+// SALAH urutan kebalik
 if (score >= 70) {
   console.log('Grade: C') // ini yang kecetak, padahal score-nya 95!
 } else if (score >= 90) {
@@ -136,7 +136,7 @@ switch (day) {
 // Rabu
 ```
 
-`break` itu penting — kalau lupa, eksekusi bakal "jatuh" (fall through) ke `case` berikutnya meskipun kondisinya nggak cocok.
+`break` itu penting kalau lupa, eksekusi bakal "jatuh" (fall through) ke `case` berikutnya meskipun kondisinya nggak cocok.
 
 ```js
 const day = 2
@@ -160,7 +160,7 @@ Fall-through ini kadang memang disengaja (misal beberapa `case` share logic yang
 
 ## Kapan Pakai if vs switch vs ternary
 
-- **Ternary**: satu kondisi, dua hasil, sederhana — cocok buat assignment langsung
+- **Ternary**: satu kondisi, dua hasil, sederhana cocok buat assignment langsung
 - **if...else if**: kondisi berdasarkan range atau ekspresi boolean kompleks
 - **switch**: satu variabel dibandingkan dengan banyak nilai spesifik yang diketahui
 
@@ -175,7 +175,7 @@ Fall-through ini kadang memang disengaja (misal beberapa `case` share logic yang
 
 ## Exercises: Level 2
 
-3. Tebak dulu, baru buktikan — apa output dari kode `switch` di bawah ini, dan kenapa:
+3. Tebak dulu, baru buktikan apa output dari kode `switch` di bawah ini, dan kenapa:
    ```js
    const value = 2
    switch (value) {
@@ -192,15 +192,15 @@ Fall-through ini kadang memang disengaja (misal beberapa `case` share logic yang
    ```
 4. Buat dua variabel boolean `isRaining` dan `hasUmbrella`. Tulis satu kondisi (pakai `&&`, tanpa nested `if`) buat menentukan apakah orang itu `'basah'` atau `'kering'`.
 
-## Exercises: Level 3 — Interview-style
+## Exercises: Level 3 Interview-style
 
-5. **Leap Year Checker** — Tulis function `isLeapYear(year)` yang menentukan apakah sebuah tahun adalah tahun kabisat. Aturan: habis dibagi 4, TAPI kalau habis dibagi 100 harus juga habis dibagi 400. (Contoh: 2000 kabisat, 1900 bukan kabisat, 2024 kabisat.)
+5. **Leap Year Checker** Tulis function `isLeapYear(year)` yang menentukan apakah sebuah tahun adalah tahun kabisat. Aturan: habis dibagi 4, TAPI kalau habis dibagi 100 harus juga habis dibagi 400. (Contoh: 2000 kabisat, 1900 bukan kabisat, 2024 kabisat.)
 
 ---
 
 # 🐞 Debugging
 
-Trace manual dulu — prediksi outputnya, baru run buat cek.
+Trace manual dulu prediksi outputnya, baru run buat cek.
 
 ```js
 const score = 85
@@ -243,7 +243,7 @@ Syarat: minimal gunakan satu `if...else if...else` dan satu operator logika (`&&
 - [ ] Soal Level 3 dicoba (minimal ada percobaan kode yang bisa ditrace bareng kalau stuck)
 - [ ] Bug di section Debugging bisa dijelasin sendiri tanpa liat kode
 - [ ] Mini project jalan dengan benar untuk minimal 2 kombinasi nilai berbeda
-- [ ] `notes.md` sudah diisi — minimal 1 insight baru dan 1 hal yang masih bingung
+- [ ] `notes.md` sudah diisi minimal 1 insight baru dan 1 hal yang masih bingung
 
 ---
 
