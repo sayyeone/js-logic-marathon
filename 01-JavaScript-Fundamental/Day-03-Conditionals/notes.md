@@ -23,3 +23,6 @@ if (condition) {
     // dijalankan jika kondisinya = false
 }
 ```
+### insight conditionals
+- switch hanya membandingkan satu variabel dengan banyak nilai pasti, **tidak ada perhitungan hanya menyocokkan 1 valuenya aja**
+
