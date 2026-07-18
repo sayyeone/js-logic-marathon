@@ -48,10 +48,10 @@ num.push(3)
 ```
 
 ### pop
+menghapus value yg berada di indeks terakhir array
 ```js
 num.pop()
 ```
-menghapus value yg berada di indeks terakhir array
 
 ### unshift
 menambahkan elemen baru didalam array di indeks pertama
@@ -66,15 +66,19 @@ num.shift()
 ```
 
 ### slice
-digunakan untuk mengambil berberapa bagian dari arraynya, untuk menjadi array yg baru
+digunakan untuk mengambil berberapa bagian dari indeks arraynya, untuk menjadi array yg baru
 
+```js
+const z = [5, 6, 4, 10];
+z.slice(1,2)
+```
 
 ### splice
-menyambung/menambah array di indeks yg tengahnya
+menyambung/menambah array di indeks yg dipilih
 
-*dengan cara = splice(index Awal, mau dihapus berapa?, tambahkan elemen baru (bisa lebih dari 1 elemen))*
+*dengan cara = splice(index yg diinginkan, mau dihapus berapa item setelah indeks?, tambahkan elemen baru (bisa lebih dari 1 elemen))*
 
 ```js
 const b = [1, 2, 5]; // 0 = 1 ; 1 = 2 ; 2 = 5
-b.splice();
+b.splice(2, 0, 99, 99);
 ```
