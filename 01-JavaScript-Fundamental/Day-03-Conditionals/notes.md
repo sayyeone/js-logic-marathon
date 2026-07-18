@@ -25,4 +25,4 @@ if (condition) {
 ```
 ### insight conditionals
 - switch hanya membandingkan satu variabel dengan banyak nilai pasti, **tidak ada perhitungan hanya menyocokkan 1 valuenya aja**
-
+- jika baris kondisi memenuhi persyaratannya maka kode dibawahnya tidak perlu dieksekusi lagi
