@@ -11,4 +11,5 @@ console.log(c);
 const b = [1, 2, 5, 100, 110, 200]; // 0 = 1 ; 1 = 2 ; 2 = 5
 b.splice(2, 2, 99, 99); // mengakses dengan indeks yg diinginkan
 console.log(b);
+console.log(b[99]);
 

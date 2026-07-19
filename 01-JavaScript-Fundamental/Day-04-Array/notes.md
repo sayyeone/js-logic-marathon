@@ -1,7 +1,11 @@
 # NOTES ARRAY
 
 ## array
-dapat menyimpan banyak nilai (tipe data yg berbeda juga) dalam satu variabel
+menyimpan banyak value dalam satu struktur data *bukan menimpan banyak variabel, tetapi menyimpan banyak elemen*
+- setiap elemen pada array berada di lokasi memori yg berbeda
+
+## index
+posisi (alamat) setiap elemen di dalam array
 
 *contoh*
 ```js
@@ -55,12 +59,18 @@ num.pop()
 
 ### unshift
 menambahkan elemen baru didalam array di indeks pertama
+- dengan menggeser seluruh elemen yg berada di setelah indeks yg ditambahkan
+- biaya komputasiaonal sangat mahal karena mengeser setiap elemennya O(n)
+
 ```js
 num.unshift(8)
 ```
 
 ### shift
 menghilangkan elemen pertama didalam array
+- dengan menggeser seluruh elemen yg berada di setelah indeks yg ditambahkan
+- biaya komputasiaonal sangat mahal karena mengeser setiap elemennya O(n)
+
 ```js
 num.shift()
 ```
@@ -82,3 +92,11 @@ menyambung/menambah array di indeks yg dipilih
 const b = [1, 2, 5]; // 0 = 1 ; 1 = 2 ; 2 = 5
 b.splice(2, 0, 99, 99);
 ```
+### reverse
+
+
+
+###
+
+
+###
