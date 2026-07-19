@@ -49,12 +49,18 @@ memasukan value baru ke dalam indeks akhir disebuah array
 - dapat sekalian multi value yg dimasukkan didalam arraynya
 ```js
 num.push(3)
+
+const panjang = fruits.push("mango");
+console.log(panjang); // mengembalikan length terbaru
 ```
 
 ### pop
 menghapus value yg berada di indeks terakhir array
 ```js
 num.pop()
+
+const hasil = fruits.pop();
+console.log(hasil); // mengembalikan elemen yg dihapus
 ```
 
 ### unshift
@@ -92,11 +98,3 @@ menyambung/menambah array di indeks yg dipilih
 const b = [1, 2, 5]; // 0 = 1 ; 1 = 2 ; 2 = 5
 b.splice(2, 0, 99, 99);
 ```
-### reverse
-
-
-
-###
-
-
-###

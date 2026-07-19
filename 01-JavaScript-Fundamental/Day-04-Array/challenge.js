@@ -13,3 +13,8 @@ b.splice(2, 2, 99, 99); // mengakses dengan indeks yg diinginkan
 console.log(b);
 console.log(b[99]);
 
+const arr1 = [5, 10, 15];
+arr1.length = 4;
+console.log(arr1);
+
+
