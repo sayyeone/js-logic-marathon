@@ -17,4 +17,15 @@ const arr1 = [5, 10, 15];
 arr1.length = 4;
 console.log(arr1);
 
+// EXC - LV 1
+
+// 1
+const webTechs = ['vue', 'nextJS', 'laravel', 'react', 'angular'];
+
+console.log(webTechs[0]); // elemen pertama
+
+const akhir = webTechs.length - 1; // elemen kedua
+console.log(webTechs[akhir]);
+
+
 
