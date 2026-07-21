@@ -24,8 +24,7 @@ const webTechs = ['vue', 'nextJS', 'laravel', 'react', 'angular'];
 
 console.log(webTechs[0]); // elemen pertama
 
-const akhir = webTechs.length - 1; // elemen kedua
+const akhir = webTechs.length - 1; // elemen indeks terakhir
 console.log(webTechs[akhir]);
 
-
-
+console.log(webTechs.length); // panjang array

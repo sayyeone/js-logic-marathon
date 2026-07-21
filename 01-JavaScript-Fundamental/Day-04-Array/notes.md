@@ -98,3 +98,7 @@ menyambung/menambah array di indeks yg dipilih
 const b = [1, 2, 5]; // 0 = 1 ; 1 = 2 ; 2 = 5
 b.splice(2, 0, 99, 99);
 ```
+
+### sort
+mengurutkan array bedasarkan awalan dari string
+- semua bentuk tipe data diubah menjadi bentuk string
