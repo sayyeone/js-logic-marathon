@@ -9,7 +9,14 @@ for (let i = 1; i <= n; i++) {
 
 // while loop
 let angka = 1;
-while (angka < 1) {
+while (angka <= 1) {
     console.log(angka);
     angka++;
 }
+
+// do while
+let coun = 1;
+do {
+    console.log(coun);
+} while (coun <= 3);
+

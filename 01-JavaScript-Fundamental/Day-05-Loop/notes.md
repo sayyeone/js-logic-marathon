@@ -14,4 +14,25 @@ while (angka <= 4) {
     angka++; // update kondisi angkanya
 }
 ```
+- pengunaan => dipakai jika belum tahu pasti perulangan dijalankan berapa kali
+- contoh: pengecekan password
+
+## do while
+melakukan perulangan yg minimal kodenya dieksekusi setidaknya 1x
+
+```js
+do {
+    pilihan = Number(prompt(`
+    === MENU ===
+    1. profil
+    2. setting
+    3. keluar
+    `));
+} while (pilihan != 3);
+console.log("program selesai");
+```
+
+## for loop
+
+
 
