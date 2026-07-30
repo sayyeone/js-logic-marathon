@@ -33,6 +33,17 @@ console.log("program selesai");
 ```
 
 ## for loop
+digunakan ketika kita tahu kapan berhentinya dari perulangan tersebut
+
+- let i = 1 => kondisi 
+- i <= 3 => kondisi berhentinya
+- i++ => kondisi penambahannya
+
+```js
+for (let i = 1; i <= 3; i++){
+    console.log(i)
+}
+```
 
 
 
