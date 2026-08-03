@@ -12,6 +12,7 @@ membutuhkan parameter/argumen
 - boleh ada/tidak
 - dipisahkan oleh koma
 - dapat mengembalikan nilai/tidak
+- jika tidak mengembalikan nilai maka namanya procedure
 
 *function declaration* => langsung memberi nama functionnya
 ```js
