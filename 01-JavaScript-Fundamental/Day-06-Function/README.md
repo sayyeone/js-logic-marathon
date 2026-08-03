@@ -1,6 +1,6 @@
 <div align="center">
   <h1>JavaScript Bootcamp: Function</h1>
-  <sub>Day 6 — JavaScript Fundamentals</sub>
+  <sub>Day 6 JavaScript Fundamentals</sub>
 </div>
 
 [<< Day 5: Loop](../Day-05-Loop/README.md) | [Day 7: Object >>](../Day-07-Object/README.md)
@@ -24,7 +24,7 @@
 
 # 📔 Day 6
 
-Sejauh ini kita udah nulis kode yang jalan sekali dari atas ke bawah. Function itu cara buat bikin blok kode yang bisa dipakai ulang berkali-kali, dengan input yang berbeda-beda. Ini konsep paling penting di seluruh pemrograman — hampir semua kode nyata dibangun dari kumpulan function kecil yang saling manggil.
+Sejauh ini kita udah nulis kode yang jalan sekali dari atas ke bawah. Function itu cara buat bikin blok kode yang bisa dipakai ulang berkali-kali, dengan input yang berbeda-beda. Ini konsep paling penting di seluruh pemrograman hampir semua kode nyata dibangun dari kumpulan function kecil yang saling manggil.
 
 Function bikin kode:
 - Lebih rapi dan gampang dibaca
@@ -97,7 +97,7 @@ addTwoNumbers(10, 20) // 30
 
 ## Function dengan Parameter Array
 
-Salah satu parameter yang sering dipakai adalah array itu sendiri. Function menerima satu array, lalu isinya diproses pakai loop di dalam function tersebut — ini pattern yang bakal sering banget kamu pakai.
+Salah satu parameter yang sering dipakai adalah array itu sendiri. Function menerima satu array, lalu isinya diproses pakai loop di dalam function tersebut ini pattern yang bakal sering banget kamu pakai.
 
 ```js
 function sumArrayValues(arr) {
@@ -132,22 +132,22 @@ Bedanya dengan rest parameter (`...args`) yang kita bahas di bawah: di sini kita
 Kalau function nggak punya `return`, hasilnya `undefined` walaupun di dalamnya ada `console.log`. `return` itu yang bikin nilai dari dalam function bisa "dibawa keluar" dan dipakai di tempat lain.
 
 ```js
-// TANPA return — cuma cetak, nilainya nggak bisa dipakai lagi
+// TANPA return cuma cetak, nilainya nggak bisa dipakai lagi
 function addTwoNumbersV1(a, b) {
   console.log(a + b)
 }
 let result1 = addTwoNumbersV1(2, 3) // 5 tercetak, tapi...
 console.log(result1) // undefined!
 
-// DENGAN return — nilainya bisa disimpan dan dipakai lagi
+// DENGAN return nilainya bisa disimpan dan dipakai lagi
 function addTwoNumbersV2(a, b) {
   return a + b
 }
 let result2 = addTwoNumbersV2(2, 3)
-console.log(result2) // 5 — ini benar-benar tersimpan
+console.log(result2) // 5 ini benar-benar tersimpan
 ```
 
-Begitu `return` dieksekusi, function langsung berhenti — kode setelah `return` di dalam function itu nggak akan pernah jalan.
+Begitu `return` dieksekusi, function langsung berhenti kode setelah `return` di dalam function itu nggak akan pernah jalan.
 
 ```js
 function example() {
@@ -168,7 +168,7 @@ const square = function (n) {
 console.log(square(4)) // 16
 ```
 
-Bedanya dengan function declaration: function expression **nggak bisa dipanggil sebelum baris deklarasinya** (function declaration bisa, karena ada proses "hoisting" — ini bakal dibahas lebih detail nanti).
+Bedanya dengan function declaration: function expression **nggak bisa dipanggil sebelum baris deklarasinya** (function declaration bisa, karena ada proses "hoisting" ini bakal dibahas lebih detail nanti).
 
 ## Arrow Function
 
@@ -180,12 +180,12 @@ function square(n) {
   return n * n
 }
 
-// Arrow function — versi penuh
+// Arrow function versi penuh
 const square2 = (n) => {
   return n * n
 }
 
-// Arrow function — versi ringkas (kalau isinya cuma satu baris return, bisa dihilangkan return dan kurung kurawalnya)
+// Arrow function versi ringkas (kalau isinya cuma satu baris return, bisa dihilangkan return dan kurung kurawalnya)
 const square3 = (n) => n * n
 
 console.log(square(4), square2(4), square3(4)) // 16 16 16
@@ -224,8 +224,8 @@ function calculateAge(birthYear, currentYear = 2026) {
   return currentYear - birthYear
 }
 
-console.log(calculateAge(2000))       // 26 — pakai currentYear default
-console.log(calculateAge(2000, 2030)) // 30 — currentYear di-override
+console.log(calculateAge(2000))       // 26 pakai currentYear default
+console.log(calculateAge(2000, 2030)) // 30 currentYear di-override
 ```
 
 ## Rest Parameter (Parameter Tak Terbatas)
@@ -262,15 +262,15 @@ console.log(sumAll(10))               // 10
 3. Buat function `sumArrayValues(arr)` yang menerima array angka sebagai parameter, lalu mengembalikan total penjumlahan semua isinya (pakai loop di dalam function).
 4. Buat function `calculateBMI(weight, height)` yang menghitung BMI (`weight / (height * height)`), lalu berdasarkan hasilnya kembalikan kategori: `'Underweight'` (di bawah 18.5), `'Normal'` (18.5-24.9), `'Overweight'` (25-29.9), atau `'Obese'` (30 ke atas). Tulis sebagai arrow function.
 
-## Level 3 — Interview-style
+## Level 3 Interview-style
 
-5. **Find Max Tanpa Math.max** — Buat function `findMax(a, b, c)` yang mengembalikan nilai terbesar dari tiga angka, TANPA menggunakan `Math.max()`.
+5. **Find Max Tanpa Math.max** Buat function `findMax(a, b, c)` yang mengembalikan nilai terbesar dari tiga angka, TANPA menggunakan `Math.max()`.
 
 ---
 
 # 🐞 Debugging
 
-Trace manual dulu — prediksi outputnya, baru run buat cek.
+Trace manual dulu prediksi outputnya, baru run buat cek.
 
 ```js
 function multiplyByTwo(num) {
@@ -294,11 +294,11 @@ Pertanyaan reflektif:
 
 Buat beberapa function kalkulator sederhana:
 
-1. `add(a, b)`, `subtract(a, b)`, `multiply(a, b)`, `divide(a, b)` — masing-masing melakukan operasi dasarnya dan `return` hasilnya
-2. `divide(a, b)` harus menangani kasus pembagian dengan 0 — kembalikan string `'Tidak bisa dibagi dengan 0'` alih-alih `Infinity`
+1. `add(a, b)`, `subtract(a, b)`, `multiply(a, b)`, `divide(a, b)` masing-masing melakukan operasi dasarnya dan `return` hasilnya
+2. `divide(a, b)` harus menangani kasus pembagian dengan 0 kembalikan string `'Tidak bisa dibagi dengan 0'` alih-alih `Infinity`
 3. Buat satu function `calculate(operator, a, b)` yang menerima operator (`'+'`, `'-'`, `'*'`, `'/'`) sebagai string, lalu memanggil function yang sesuai berdasarkan operator itu
 
-Syarat: minimal satu function ditulis sebagai arrow function, semua function harus `return` nilai (bukan cuma `console.log`), dan `calculate(operator, a, b, ...)` boleh kamu desain supaya bisa nerima lebih dari dua angka sekaligus pakai rest parameter — coba eksplorasi sendiri.
+Syarat: minimal satu function ditulis sebagai arrow function, semua function harus `return` nilai (bukan cuma `console.log`), dan `calculate(operator, a, b, ...)` boleh kamu desain supaya bisa nerima lebih dari dua angka sekaligus pakai rest parameter coba eksplorasi sendiri.
 
 ---
 
@@ -307,9 +307,9 @@ Syarat: minimal satu function ditulis sebagai arrow function, semua function har
 - [ ] Kedua soal Level 1 selesai dan outputnya sesuai
 - [ ] Kedua soal Level 2 selesai
 - [ ] Soal Level 3 dicoba
-- [ ] Bug di section Debugging bisa dijelasin sendiri tanpa liat kode — termasuk kenapa `return` itu penting
+- [ ] Bug di section Debugging bisa dijelasin sendiri tanpa liat kode termasuk kenapa `return` itu penting
 - [ ] Mini project jalan untuk semua operator, termasuk kasus pembagian dengan 0
-- [ ] `notes.md` sudah diisi — minimal 1 insight baru dan 1 hal yang masih bingung
+- [ ] `notes.md` sudah diisi minimal 1 insight baru dan 1 hal yang masih bingung
 
 ---
 
