@@ -56,12 +56,25 @@ function sumKubes(a, b){
 ```
 jadi bisa membutuhkan 1 variabel saja atau kita lengsung menggunakan operator aritmatika dengan langsung mengembalikan hasilnya
 
+## parameter
+tempat kosong yg menunggu diisi saat functionnya dipanggil / variabel biasa kita deklarasikan
+
+## argument
+data yg dikirim ke function
+
+## return
+MEMBERIKAN/MENYERAHKAN nilai/data hasil olahan fungsinya agar bisa disimpan di variabel / diolah lagi
+
+*contoh*
+```js
+function tambah() {
+    return 5;
+}
+
+console.log(tambah() * 10);
+```
+jadi functionnya bisa diolah langsung atau disimpan didalam variabel terlebih dahulu
+
+
 ### good to know
 function yg baik hanya mengerjakan suatu tugas spesifik saja
-
-
-
-
-
-
-
