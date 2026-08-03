@@ -72,6 +72,26 @@ akses menggunakan pengecekan array.length untuk mengecek panjang dari arraynya
 
 - i artinya indeks yang nilainya disimpan didalam variabel i
 
+**ARRAY 2D**
+digunakan untuk merepresentasikan data yg membutuhkan baris dan kolom
+
+*contoh* = papan catur, penyimpanan matriks, papan catur
+*contoh dalam kehidupan nyata* = merepresentasikan data nilai 3 siswa untuk 2 mata pelajaran
+
+=> maka perulangannya juga membutuhkan 2x, yg pertama untuk baris, dan yg kedua untuk akses kolomnya
+
+```js
+array[i][j] // representasi indeks per kolom dan baris dari arraynya
+```
+
+**contoh kode**
+```js
+const nilai = [
+  [100, 10, 90], // representasi penyimpanan nilai mhs ke 1
+  [20, 80, 70] // representasi penyimpanan nilai mhs ke 2
+];
+```
+
 ## nested loop
 dalam satu perulangan, menjalankan perulangan yg lainnya (biasanya maks 3x perulangan)
 ```js
