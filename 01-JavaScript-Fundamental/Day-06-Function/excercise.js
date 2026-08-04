@@ -9,3 +9,13 @@ function sumKubus(s1, s2) {
 
 let hasil = sumKubus(8,3)
 console.log(hasil);
+
+// test
+function halo() {
+    console.log("Haloh");
+};
+console.log(halo);
+
+setTimeout(() => {
+    
+}, timeout);

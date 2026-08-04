@@ -75,6 +75,51 @@ console.log(tambah() * 10);
 ```
 jadi functionnya bisa diolah langsung atau disimpan didalam variabel terlebih dahulu
 
+## function expression
+function yg disimpan dalam variabel terlebih dahulu
+```js
+const halo = function() {
+    console.log("Halo");
+};
+
+halo()
+```
+variabel halo menyimpan sebuah function, dan cara memanggilnya juga sama
+
+## anonymus function
+fungsi tanpa nama
+
+```js
+function sapa(){
+    console.log("haloh");
+}
+```
+karena kode diatas tidak jelas penamaannya, maka anonymus function harus diperlakukan berbeda
+1. disimpan ke variabel
+```js
+const sapa = function() {
+    console.log("halo");
+}
+```
+2. dititipkan langsung ke fungsi lain sebagai callback
+```js
+setTimeout(function() {
+    console.log("halo");
+}, 2000)
+```
+3. ditulis dengan arrow function
+```js
+const sapa = () => {
+    console.log("halo")
+}
+```
+## arrow function
+shortcut untuk menulis anonymus function
+```js
+const sapa = (nama) => {
+    return "Halo " + nama;
+}
+```
 
 ### good to know
 function yg baik hanya mengerjakan suatu tugas spesifik saja
