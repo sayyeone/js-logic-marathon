@@ -12,8 +12,13 @@ const mobil = {
         console.log("mber...");
     }
 };
-```
 
+// CARA MENGAKSESNYA
+console.log(mobil.merek);
+mobil.bunyi();
+```
+## this
+this mengembalikan object global
 
 ## melalui kelas/constructor
 ```js
@@ -33,6 +38,28 @@ class Mobil {
 const mobil1 = new Mobil("Toyota", 100)
 const mobil2 = new Mobil("Honda", 300)
 ```
+## FACTORY FUNC X
+
+
+## constructor function
+menggunakan kata kunci this dan new
+```js
+function Circle() {
+    this.radius = radius;
+    this.draw = function() {
+        console.log('draw!');
+    }
+}
+const another = new Circle(1);
+```
+## constructor property
+
+
+
+
+
+
+
 
 objek terdiri dari 4 pilar utama yaitu: 
 1. Abstraksi
