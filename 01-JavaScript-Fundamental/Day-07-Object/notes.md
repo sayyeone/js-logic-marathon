@@ -7,7 +7,7 @@ lanngsung tanpa mendefinisikan class nya
 ```js
 const mobil = {
     merek: "toyota", // INI MERUPAKAN PROPERTI
-    kecepatan: 20,
+    kecepatan: 20,  // YG TERDIRI DARI KEY & VALUE
     bunyi: funtion() { // INI MERUPAKAN METODE
         console.log("mber...");
     }
@@ -54,11 +54,20 @@ const another = new Circle(1);
 ```
 ## constructor property
 
+## bracket notation
+dipakai ketika nama properti berasal dari variabel, input user, atau hasil perhitungan
+- mengakses kunci bukan dengan teknik hardcoded
+- tapi memisalkan kunci yg akan dituju nantinya
 
+```js
+const mahasiswa = {
+    nama: 'Adis',
+    umur: 20,
+    jurusan: 'infor'
+}
 
-
-
-
+mahasiswa['nama']
+```
 
 
 objek terdiri dari 4 pilar utama yaitu: 
