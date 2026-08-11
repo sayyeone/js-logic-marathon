@@ -21,6 +21,14 @@
 
 // sapa(halo, "adis")
 
-const halo = () => ("halo");
-// console.log(halo);
-console.log(halo());
+// const halo = () => ("halo");
+// console.log(halo); // PAKAI CARA PANGGIL FUNCTION LANGSUNG
+// console.log(halo()); // PAKAI AMBIL ISI DARI FUNCTIONNYA
+// console.log(typeof(true));
+
+
+// FOREACH
+const num = [1, 2, 3, 4];
+
+num.forEach((item, index) => console.log(item, index)); // berupa anonymus function
+

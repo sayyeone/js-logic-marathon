@@ -37,3 +37,15 @@ halo()
 ```
 menggunakan functionnya secara langsung, dengan diberi tanda kurung
 
+## forEach
+mencetak semua elemen dalam sebuah array *khusus array*
+- foreach melakukan looping => setiap looping mengambil satu elemen => elemennya dikirim ke callback
+
+```js
+const angka = [1, 2, 3, 4, 5, 6, 7];
+
+angka.forEach((item) => console.log(item)) // merupakan anonymus function
+```
+- bentuk dari anonymus function argumennya hanya 3, item, index, dan data dari arraynya
+
+
