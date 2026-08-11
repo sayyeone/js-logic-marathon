@@ -120,6 +120,24 @@ const sapa = (nama) => {
     return "Halo " + nama;
 }
 ```
+## metode chaining / metode call
+function built in, jadi yg menyediakan adalah js, tidak bisa diubah
+```js
+const num = [1,2,3];
+console.log(num.findLastIndex)
+```
+
+## standalone function / helper call
+fungsi mandiri yg kita buat sendiri
+
+```js
+function findIndex(arr) {
+    // isi logika pencarian
+}
+
+const num = [1,2,3];
+findIndex(num)
+```
 
 ### good to know
 function yg baik hanya mengerjakan suatu tugas spesifik saja
