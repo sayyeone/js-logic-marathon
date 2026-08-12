@@ -28,7 +28,18 @@
 
 
 // FOREACH
-const num = [1, 2, 3, 4];
+// const num = [1, 2, 3, 4];
 
-num.forEach((item, index) => console.log(item, index)); // berupa anonymus function
+// num.forEach((item, index) => console.log(item, index)); // berupa anonymus function
+
+
+// // MAP
+// const num = [1, 2, 3]
+
+// const res = num.map(x => x + 1)
+// console.log(num);
+
+// FILTER
+
+
 
