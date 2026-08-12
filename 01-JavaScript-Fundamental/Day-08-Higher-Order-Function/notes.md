@@ -71,5 +71,34 @@ console.log(res)
 ```
 
 ## filter
+menyaring elemen di dalam array bedasarkan kondisi tertentu
+- hasilnya = array baru yg berisi elemen yg lolos seleksi saja
+- jika true => elemen tersebut diloloskan => dimasukkan ke array baru
+- jika false => elemen tidak diloloskan => tidak dimasukkan ke array baru
 
+```js
+const arrayBaru = arrayAsli.filter((elemen, indeks, arrayAsliLengkap) => {
+    return kondisiPengujian;
+})
+```
+- elemen (wajib) = nilai elemen yg diperiksa
+- indeks (opsional) = posisi indeks elemen saat ini
+- arrayAsliLengkap (opsional) = referensi ke seluruh array asal
+
+```js
+// mencari angka ganjil / genap
+
+const num = [1, 2, 3]
+
+const hasil = num.filter(n => n % 2 === 0);
+console.log(hasil)
+```
+- yg direturn merupakan kondisi true/false dari setiap elemen yg dicek
+
+## find
+
+
+
+
+## reduce
 
