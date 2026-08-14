@@ -116,4 +116,27 @@ console.log(hasil)
 
 
 ## reduce
+menjadikan seluruh elemen array menjadi satu nilai akhir
+
+```js
+const hasilAkhir = arr.reduce((akumulator, itemSaatIni) => {
+    // hitung sesuatu dan kembalikan nilai akumulator baru
+    return akumulator + itemSaatIni
+}, nilaiAwal)
+```
+- akumulator / acc = nilai penampung yg terus dibawa dan diupdate setiap putaran
+- itemSaatIni = elemen array yang sedang diproses
+- nilaiAwal = nilai awal tempat akumulator memulai hitungan
+
+```js
+const angka = [10, 20, 30]
+
+const total = angka.reduce((total, item) => {
+    return total + item;
+}, 0)
+
+console.log(total)
+```
+
+
 
