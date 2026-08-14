@@ -75,6 +75,7 @@ menyaring elemen di dalam array bedasarkan kondisi tertentu
 - hasilnya = array baru yg berisi elemen yg lolos seleksi saja
 - jika true => elemen tersebut diloloskan => dimasukkan ke array baru
 - jika false => elemen tidak diloloskan => tidak dimasukkan ke array baru
+- menyaring semua elemen dari array
 
 ```js
 const arrayBaru = arrayAsli.filter((elemen, indeks, arrayAsliLengkap) => {
@@ -96,8 +97,22 @@ console.log(hasil)
 - yg direturn merupakan kondisi true/false dari setiap elemen yg dicek
 
 ## find
+- langsung berhenti dari pengecekan elemen ketika menemukan elemen yg cocok
+- berhenti di elemen pertama yg memenuhi syarat
+- jika tidak menemukan elemen yg dicari maka hasilnya undefined
 
+```js
+const hasil = arrayAsli.find((item, index, array) => {
+    return kondisiPencarian;
+})
+```
 
+```js
+const angka = [1, 2, 3]
+
+const hasil = angka.find(item => item > 2)
+console.log(hasil)
+```
 
 
 ## reduce
