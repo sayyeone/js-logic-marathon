@@ -137,6 +137,3 @@ const total = angka.reduce((total, item) => {
 
 console.log(total)
 ```
-
-
-
