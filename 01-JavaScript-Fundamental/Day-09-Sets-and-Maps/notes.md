@@ -2,6 +2,7 @@
 
 ## set
 set hanya menerima kumpulan nilai yg unik saja
+- hanya fokus pada valuenya
 - bedanya dengan array adalah
 ```js
 const array = [1, 2, 3, 3] // masih diperbolehkan
@@ -30,5 +31,33 @@ students.delete("Fatika");
 
 students.clear(); // untuk menghapus semuanya
 students.size // mengetahui jumlah item dalam set
+students.has() // mengecek apakah suatu nilai ada/tidak
 ```
 
+## operasi pada set
+mengabungkan diantara 2 kelompok set, misal kelompok A dan kelompok B
+
+### union
+menggabungkan semua anggota dari dua set, tetapi menghilangkan duplikat
+
+
+
+
+
+
+
+
+
+
+### perbedaan diantara 3 nya
+                 DATA
+                   │
+          ┌────────┴────────┐
+          │                 │
+    Satu entity?        Kumpulan data?
+          │                 │
+        Object          ┌────┴────┐
+                       │         │
+                 Butuh unik?   KEY → VALUE?
+                       │         │
+                      Set       Map
