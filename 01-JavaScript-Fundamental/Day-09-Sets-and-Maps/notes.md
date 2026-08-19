@@ -40,9 +40,41 @@ mengabungkan diantara 2 kelompok set, misal kelompok A dan kelompok B
 ### union
 menggabungkan semua anggota dari dua set, tetapi menghilangkan duplikat
 
+```js
+const classA = new Set([
+      "adis", "budi", "tika"
+])
 
+const classB = new Set([
+      "tika", "denis"
+])
+```
+requirtment: "saya ingin mendapatkan semua mhs dari class A dan class B, tetapi mahasiswa yg sama tidak boleh muncul 2x"
 
+- maka kita membuat union
+```js
+const union = new Set([
+      ...classA, ...classB
+])
 
+console.log(union)
+```
+
+*memakai built-in union*
+```js
+const gabungan = classA.union(classB)
+console.log(gabungan)
+```
+
+### intersection
+mengambil elemen yg sama dari kedua set
+
+```js
+// intersection()
+
+const bothClasses = classA.intersection(classB)
+console.log(bothClasses)
+```
 
 
 
