@@ -92,9 +92,33 @@ const bothClasses = classA.intersection(classB)
 console.log(bothClasses)
 ```
 
+### difference
+mengambil semua elemen yg ada di set a, tetapi tidak ada di set b
 
+```js
+const A = new Set([1, 2, 3]);
+const B = new Set([3, 4, 5, 6]);
 
+const res = A.difference(B);
+console.log(res);
+```
+*dengan cara manual*
+```js
+const result = a.filter(num => !B.has(num))
+```
 
+## MAP
+data yg disimpan dalam bentuk pasangan key dan valuenya
+- berfokus pada hubungan key -> value
+
+```js
+const students = new Map(); // membuat map
+
+students.set("adis", 90); // mengisi value dan key
+students.get("adis") // mengambil value bedasarkan key
+students.has("adis") // mengecek apakah key tersebut ada?
+students.size // mengecek berapa banyak pasangannya
+```
 
 
 ### perbedaan diantara 3 nya
