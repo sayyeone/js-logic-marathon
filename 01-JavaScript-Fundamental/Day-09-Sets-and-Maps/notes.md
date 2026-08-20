@@ -70,6 +70,22 @@ console.log(gabungan)
 mengambil elemen yg sama dari kedua set
 
 ```js
+let a = [1, 2, 3, 4, 5]
+let b = [3, 4, 5, 6]
+
+let A = new Set(a)
+let B = new Set(b)
+
+let c = a.filter(num => B.has(num))
+```
+kita menggunakan array variabel a untuk dilakukan filter yg mana kondisinya adalah apakah variabel a memiliki angka yg sama dengan set B?
+
+### HAS VS INCLUDES
+- has melakukan pengecekan set secara langsung, jadi bukan dicek kedalam elemennya 1 per 1 => metodenya khusus untuk set
+- includes melakukan pengecekan array dengan mengecek elemennya 1 per 1
+
+*memakai built-in*
+```js
 // intersection()
 
 const bothClasses = classA.intersection(classB)
