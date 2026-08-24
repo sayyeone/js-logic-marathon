@@ -41,18 +41,28 @@
 
 // console.log(w)
 
-const person = {
-    username: "adisty",
-    education: {
-        subject: "compsi"
-    }
-}
+// const person = {
+//     username: "adisty",
+//     education: {
+//         subject: "compsi"
+//     }
+// }
 
-// misalkan ingin mengambil properti subject
-const {
-    education: {
-        subject
-    }
-} = person
+// // misalkan ingin mengambil properti subject
+// const {
+//     education: {
+//         subject
+//     }
+// } = person
 
-console.log(subject)
+// console.log(subject)
+
+// MEMBUAT PERHITUNGAN LUAS KOTAK DENGAN OBJECT
+const square = {
+    width: 10,
+    height: 20
+};
+
+const area = square => square.width * square.height;
+
+console.log(area(square))

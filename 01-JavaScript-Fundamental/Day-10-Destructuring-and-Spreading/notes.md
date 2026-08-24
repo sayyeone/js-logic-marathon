@@ -95,5 +95,44 @@ const {
 
 console.log(subject)
 ```
-### 
+### object sebagai parameter function
+```js
+const square = {
+    width: 10,
+    height: 20
+};
+
+const area = square => square.width * square.height;
+
+console.log(area(square))
+```
+
+- kalau di destructuring langsung dimasukkan melalui parametr di functionnya
+- membantu menyatakan data apa saja yg dibutuhkan oleh function
+
+```js
+const area = square => square.width * square.height; // SEBELUMNYA
+
+const area = ( {width, height} ) => width * height // SESUDAH
+```
+
+### spread operator
+untuk menyebarkan seluruh isi dari sebuah array/object ke tempat yg baru
+
+```js
+const numbers = [1, 2, 3]
+
+// jika ingin membuat array baru yg isinya sama
+const copy = [...numbers]
+console.log(copy)
+```
+- digunakan untuk menggabungkan array
+```js
+const fe = ["html", "css"]
+const be = ["node", "express"]
+
+// mengabungkan kedua array diatas
+const fullstack = [...fe, ...be]
+```
+
 
