@@ -33,3 +33,67 @@ const numbers = [1, 2, 3, 4]
 
 const [first, second, ...rest] = numbers // rest menjadi tempat mengumpulkan sisa elemen menjadi array
 ```
+
+### destructuring iteration
+```js
+const products = [
+    ["laptop", 100]
+]
+
+for (const [name, price] of products) {
+    console.log(name, price)
+}
+```
+
+### destructuring object
+```js
+
+const person = {
+    username: "Adis",
+    age: 20
+}
+console.log(person.username); // CARA YG LAMA
+
+const {username, age} = person
+console.log(age);
+```
+### rename objectnya
+- menganti nama dari objeknya
+
+```js
+const { namaKey: namaVariabelBaru } = object
+```
+
+```js
+const rectangle = {
+    width: 20,
+    height: 10,
+    area: 200
+}
+
+let{
+    width: w
+} = rectangle
+
+console.log(w)
+```
+- nested renaming
+```js
+const person = {
+    username: "adisty",
+    education: {
+        subject: "compsi"
+    }
+}
+
+// misalkan ingin mengambil properti subject
+const {
+    education: {
+        subject
+    }
+} = person
+
+console.log(subject)
+```
+### 
+
