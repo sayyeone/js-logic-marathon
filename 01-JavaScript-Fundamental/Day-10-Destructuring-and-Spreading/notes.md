@@ -134,5 +134,40 @@ const be = ["node", "express"]
 // mengabungkan kedua array diatas
 const fullstack = [...fe, ...be]
 ```
+### spread operator object
+```js
+const user = {
+    name: "dist",
+    role: "student"
+}
 
+// MEMBUAT COPY BARU DENGAN OBJECT YG ISINYA SAMA
+const copy = {...user}
+```
+- jika mengupdate versi objectnya
 
+```js
+role = "dev"
+
+// MEMAKAI CARA
+const updated = {
+    ...user,
+    role: "dev"
+}
+```
+
+### spread operator function
+```js
+const sum = (a, b, c) => {
+    return a + b + c
+}
+
+sum(10, 20, 30)
+```
+kalau angka yg ingin dimasukkan ke parameter sudah didefinisikan di array seperti
+```js
+const numbers = [10, 20, 30]
+
+// maka kita memakai spread operator
+sum(...numbers)
+```
