@@ -142,3 +142,27 @@ findIndex(num)
 ### good to know
 function yg baik hanya mengerjakan suatu tugas spesifik saja
 - function ketika dijalankan hanya memanggil saja dan melakukan operasinya. tapi kita belum 100% mengeluarkannya ke terminal
+
+## misscons
+**MEMILIKI 2 VERSI**
+- v1
+```js
+function hitungDiskon(harga) {
+    const hasil = harga * 0.9;
+    console.log(hasil)
+}
+```
+hasil dari function hitung diskon tersebut akan ditampilkan ke layar pengguna saja
+
+- v2
+```js
+function hitungDiskon(harga) {
+    const hasil = harga * 0.9
+    return hasil
+}
+```
+kode ini tidak muncul di console, tetapi menghasilkan 90000.
+=> nilainya dikembalikan ke tempat function yg dipanggil, misalnya
+```js
+const hargaSetelahDiskon = hitungDiskon(1000)
+```
