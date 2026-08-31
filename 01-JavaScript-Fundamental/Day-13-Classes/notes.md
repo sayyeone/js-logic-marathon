@@ -128,3 +128,90 @@ console.log(person1.getScore) // CARA MEMANGGIL FUNGSINYA
 
 ## setter
 mengubah nilai properti tertentu
+- case: ketika kita ingin menjumlahkan skor yg telah diinisialisasikan, dengan skor terbaru
+
+```js
+class Person {
+    constructor(name) {
+        this.name = name
+        this.score = 0
+    }
+
+    set setScore(score) { // INI MERUPAKAN SETTER
+        this.score += score
+    }
+}
+
+person1.setScore = 1 // CARA MEMANGGILNYA
+```
+
+## static method
+method yg dipanggil langsung melalui class, bukan melalui object hasil new
+- tidak membutuhkan data dari object tertentu
+
+```js
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    sayHello() {
+        return `Halo, saya ${this.name}`;
+    }
+
+    static isValidAge(age) {
+        return age >= 0;
+    }
+}
+```
+
+## inheritance
+memungkinkan sebuah class mewarisi property dan mewarisi property dan method dari kelas lain
+
+- kita punya Person sebagai parent class
+- student sebagai child class
+
+       Person
+       /    \
+      ↓      ↓
+ Student   Teacher
+
+```js
+class Student extends Person {
+    // artinya buat class student yang mewarisi Person
+}
+```
+- contoh
+```js
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName
+        this.lastName = lastName
+    }
+}
+
+// CLASS YG MEWARISI PERSON
+class Student extends Person {
+
+}
+
+const student1 = new Student("Dist", "Fatika")
+```
+
+## overriding method
+child class membuat implementasi sendiri untuk method yg diwarisi dari parent class
+
+```js
+class Student extends Person {
+    constructor(firstName, lastName, age, country, city, gender) {
+        super(firstName, lastName, age, country, city) // MENGGUNAKAN PROPERTI PARENT
+
+        this.gender = gender // MENAMBAHKAN PROPERTI KHUSUS CHILDNYA
+    }
+
+getPersonInfo() {
+    return `${this.firstName} ${this.lastName}, ${this.age}, ${this.country}, ${this.city}, ${this.gender}`
+    }
+}
+```
