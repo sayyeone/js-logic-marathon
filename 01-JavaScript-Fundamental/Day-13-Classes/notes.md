@@ -17,12 +17,6 @@ const person1 = new Person() // membuat object dari blueprintnya
 - pakai constructor = jika butuh mengoper parameter/data awal saat memanggil
 - tidak perlu = jika class hanya berisi fungsi/nilai variabelnya tidak bergantung pada parameter luar
 
-*KODE SEBELUM PAKAI CONSTRUCTOR*
-```js
-
-```
-
-
 ```js
 class Person {
     constructor(name, age) { // HANYA DIBUAT 1X AJA
@@ -42,4 +36,44 @@ object yang sedang dibuat/dikerjakan oleh constructor
 
 **penggunaan**
 - mengakses method (fungsi) lain di objek yg sama
-- 
+
+## default value
+```js
+class Person {
+    constructor(
+        firstName: "adisty",
+        lastName: "ardani"
+    ) {
+        this.firstName = firstName
+        this.lastName = lastName
+    }
+}
+
+const person1 = new Person() // kalau default value akan undefined
+```
+- cara mengisi default value = kita assign kan dengan nialai yg akan kita isi
+
+## method class
+function yg menjadi bagian dari class
+- untuk melakukan suatu tindakan / perilaku yang berkaitan dengan objek
+
+```js
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName
+        this.lastName = lastName
+    }
+
+    getFullName() { // MERUPAKAN METHOD
+        return this.firstName + " " + this.lastName // MENGEMBALIKAN VARIABEL FIRSTNAME DAN LASTNAME
+    }
+}
+
+const person1 = new Person("adisty", "ardani") // MENGINISIALISASIKANNYA
+person1.getFullName() // MEMANGGIL METHODNYA
+```
+
+### method yg menerima parameter
+```js
+
+```
