@@ -141,3 +141,4 @@ findIndex(num)
 
 ### good to know
 function yg baik hanya mengerjakan suatu tugas spesifik saja
+- function ketika dijalankan hanya memanggil saja dan melakukan operasinya. tapi kita belum 100% mengeluarkannya ke terminal
