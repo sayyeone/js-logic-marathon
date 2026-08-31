@@ -55,7 +55,7 @@ const person1 = new Person() // kalau default value akan undefined
 
 ## method class
 function yg menjadi bagian dari class
-- untuk melakukan suatu tindakan / perilaku yang berkaitan dengan objek
+- untuk melakukan **suatu tindakan** / perilaku yang berkaitan dengan objek
 
 ```js
 class Person {
@@ -75,5 +75,56 @@ person1.getFullName() // MEMANGGIL METHODNYA
 
 ### method yg menerima parameter
 ```js
+class Person {
+    constructor(name) {
+        this.name = name
+    }
 
+    getName(greeting) {
+        return(greeting + " " + this.name)
+    }
+}
+
+const person1 = new Person("adis")
+console.log(person1.getName("halo"))
 ```
+
+## default value constructor
+nilai untuk parameter constructor pada saat object dibuat, parameter tersebut tidak diberikan nilai
+```js
+class Person {
+    constructor(firstName, lastName, age, country, city) {
+        this.firstName = firstName
+        this.lastName = lastName
+        this.age = age
+        this.country = country
+        this.city = city
+
+        this.score = 0
+        this.skills = []
+    }
+}
+```
+
+## getter
+method untuk **mengakses/mengambil** nilai dari objek, saat dipanggil tidak memerlukan ()
+- mengambil nilainya dan kita akan melakukan proses perhitungan terlebih dahulu
+- tidak menerima parameter
+
+```js
+class Person {
+    constructor(firstName) {
+        this.firstName = firstName
+        this.score = score
+    }
+
+    get getScore() {
+        return this.score
+    }
+}
+
+console.log(person1.getScore) // CARA MEMANGGIL FUNGSINYA
+```
+
+## setter
+mengubah nilai properti tertentu
