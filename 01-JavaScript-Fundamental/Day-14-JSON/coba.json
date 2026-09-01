@@ -1,0 +1,8 @@
+{
+    "nama" : "Adisty",
+    "umur" : 10,
+    "nim" : "103072400091",
+    "pembimbing" : {
+        "pembimbing1": "bu pima"
+    }
+}
