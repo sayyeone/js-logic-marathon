@@ -21,5 +21,42 @@ A(C) // menjalankan callback c
 menjalankan function setelah kodenya selesai, kemudian menangkap semua function yg diberikan sesuai dengan parameternya
 - function yg **menerima callback** memutuskan kapan callback akan dijalankan
 
+## setTimeout
+menjalankan sebuah function setelah waktu tertentu
+- bentuk sederhananya
+```js
+setTimeout(callback, waktu)
+```
+```js
+setTimeout(() => {
+    console.log("halo")
+}, 2000)
+```
+- menjalankan halo setelah 2000ms (2 detik)
+
+bentuk lain
+```js
+const tampilkan = () => {
+    console.log("halo")
+};
+
+setTimeout(tampilkan, 2000)
+```
 
 # PROMISES
+sebuah object yg merepresentasikan hasill dari suatu proses yg belum selesai
+
+**problem:**
+1. ada proses yg membutuhkan waktu = mengambil data dari server
+2. hasil dari proses tidak langsung tersedia
+3. program yg dijalankan tidak boleh berhenti hanya karena menunggu
+
+## memiliki 3 keadaan utama
+- fulfilled (berhasil)
+- rejected (gagal)
+- pending (menunggu)
+
+## membuat promise
+```js
+const promise = new 
+```
