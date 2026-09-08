@@ -58,5 +58,30 @@ sebuah object yg merepresentasikan hasill dari suatu proses yg belum selesai
 
 ## membuat promise
 ```js
-const promise = new 
+const promise = new Promise((resolve, reject) => {
+    resolve()
+})
 ```
+- *resolve dan reject* sebagai parameter yg berisi function diberikan oleh promise, untuk mengubah hasil/state promise
+- resolve = prosesnya berhasil dengan status fulfiled
+
+```txt
+        Promise
+           ↓
+       melakukan
+        proses
+           ↓
+    ┌──────┴──────┐
+    ↓             ↓
+ resolve       reject
+    ↓             ↓
+ berhasil        gagal
+```
+- contoh
+```js
+const janji = new Promise((resolve, reject) => {
+    resolve("berhasil")
+})
+```
+
+
