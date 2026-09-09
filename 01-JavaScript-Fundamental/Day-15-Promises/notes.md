@@ -144,4 +144,91 @@ janji
 - then akan mengembalikan promise baru
 - nilai didalam resolve bisa dimanipulasi menggunakan then dengan return
 
+*CONTOH*
+```js
+const proses = Promise.resolve(10) // langsung membuat promise yg berhasil
 
+proses
+    .then((angka) => {
+        return angka * 2
+    })
+    .then((hasil) => {
+        console.log(hasil)
+    })
+```
+
+## FETCH
+untuk meminta/mengirim data melalui HTTP
+- fetch selalu mengembalikan promise
+- melakukan request ke server/API
+
+```js
+fetch("https://example.com/users")
+    .then((response) => {
+        console.log(response)
+    })
+```
+- mengembalikan body response sebagai object, bukan json = perlu mengubahnya menjadi json => agar bisa diolah dengan mudah
+
+```js
+fetch("https://example.com/users")
+    .then((response) => {
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data)
+    })
+```
+### error fetch
+ketika server memberikan 404 not found
+- fetch() tidak menganggap HTTP 404 sebagai rejected Promise
+- promise fetch() masih dianggap berhasil mendapatkan response
+
+```js
+fetch("https://example.com/users")
+    .then((response) => {
+        if(!response.ok) {
+            throw new Error("request gagal")
+        }
+        return response.json()
+    })
+    .then((data) => {
+        console.log(data)
+    })
+    .catch((error) => {
+        console.log(error.message)
+    })
+```
+
+## ASYNC
+membuat function mengembalikan promise
+
+- contoh tanpa async
+```js
+function hitung() {
+    return 10;
+}
+
+const hasil = hitung();
+console.log(hasil)
+```
+mengeluarkan nilai 10 sesuai yg kita returnkan di function hitung tadi
+
+- menggunakan async
+```js
+async function main() {
+    return 10 // MAIN TETAP MENGHASILKAN PROMISE
+}
+```
+hasil tidak menghasilkan angka 10, tetapi sebuah promise
+
+## AWAIT 
+menunggu promise selesai dan mengambil hasilnya
+```js
+async function main() {
+    const hasil = await Promise.resolve(10) // promise berhasil dengan nilai 10
+    console.log(hasil)
+}
+
+main()
+```

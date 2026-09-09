@@ -15,11 +15,26 @@
 // a(c)
 
 // CALLBACK V2
-const callbackAngka = (angka) => console.log(angka);
+// const callbackAngka = (angka) => console.log(angka);
 
-const A = (callback) => {
-    const angka = 10
-    callback(angka)
-}
+// const A = (callback) => {
+//     const angka = 10
+//     callback(angka)
+// }
 
-A(callbackAngka)
+// A(callbackAngka)
+
+// ASYNC AWAIT
+// dengan function biasa
+// function hitung() {
+//     return 10
+// }
+
+// async function main() {
+//     const hasil = await hitung()
+//     console.log(hasil);
+// }
+
+// main()
+
+// ASYNC 
