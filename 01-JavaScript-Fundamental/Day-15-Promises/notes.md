@@ -63,7 +63,9 @@ const promise = new Promise((resolve, reject) => {
 })
 ```
 - *resolve dan reject* sebagai parameter yg berisi function diberikan oleh promise, untuk mengubah hasil/state promise
-- resolve = prosesnya berhasil dengan status fulfiled
+
+## resolve = prosesnya berhasil dengan status fulfiled
+mengirim/menyimpan hasil sebagai hasil sukses dari promise, yg nanti bisa diambil oleh then
 
 ```txt
         Promise
@@ -83,5 +85,63 @@ const janji = new Promise((resolve, reject) => {
     resolve("berhasil")
 })
 ```
+## then = mengambil hasil resolve
+- contoh
+```js
+const janji = new Promise((resolve, reject) => {
+    resolve("berhasil")
+})
+
+janji.then((result) => {
+    console.log(result)
+})
+```
+- data yg diberikan oleh resolve akan diterima oleh parameter di _.then()_
+- parameter didalam then merupakan callback function, dijalankan ketika promise berhasil
+- parameter result berasal dari resolve
+
+## catch = menangani error
+```js
+const janji = new Promise((resolve, reject) => {
+    reject("gagal!")
+})
+
+janji.catch((error) => {
+    console.log(error)
+})
+```
+## PROMISE CHAINING
+penggunaan beberapa .then() secara berurutan untuk menjalankan beberapa proses asynchronus secara berantai
+
+- bentuk dasar
+```txt
+promise
+    .then(...)
+    .then(...)
+    .then(...);
+```
+disebut chaining karena .then() pertama tersambung ke berikutnya
+
+- contoh
+```js
+const janji = new Promise((resolve, reject) => {
+    resolve("proses A selesai")
+})
+
+janji
+    .then((result) => {
+        console.log(result)
+        return "proses B selesai"
+    })
+    .then((result) => {
+        console.log(result)
+        return "proses C selesai"
+    })
+    .then((result) => {
+        console.log(result)
+    })
+```
+- then akan mengembalikan promise baru
+- nilai didalam resolve bisa dimanipulasi menggunakan then dengan return
 
 
