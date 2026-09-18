@@ -21,7 +21,7 @@ document.getElementById("judul");
 ```
 
 
-## mengambil elemen bedasarkan tag
+## get element by tag name
 kode html
 ```html
 <h1>First Title</h1>
@@ -48,3 +48,76 @@ for (let i = 0; i < allTitles.length; i++) {
     console.log(allTitles[i])
 }
 ```
+## get element by class name
+method untuk mengambil elemen html bedasarkan nama class
+```js
+document.getElementByClassName('classname')
+```
+
+*contoh HTML*
+```html
+<h1 class="title">First Title</h1>
+<h1 class="title">Second Title</h1>
+<h1 class="title">Third Title</h1>
+```
+```js
+const titles = document.getElementsByClassName('title')
+```
+
+## get element by id
+method untuk mengambil satu elemen HTML bedasarkan id-nya
+```js
+document.getElementById('id')
+```
+
+*contoh HTML*
+```html
+<h1 id="first-title">First Title</h1>
+<h1 id="second-title">Second Title</h1>
+<h1 id="third-title">Third Title</h1>
+```
+```js
+const firstTitle = document.getElementById('first-title')
+```
+
+## query selector
+method untuk memilih satu elemen HTML bedasarkan CSS selector
+```js
+document.querySelector('selector')
+```
+
+*contoh HTML*
+```html
+<h1 id="first-title" class="title">First Title</h1>
+<h1 class="title">Second Title</h1>
+<h1 class="title">Third Title</h1>
+```
+### bedasarkan tag
+```js
+document.querySelector('h1')
+```
+- cari elemen <h1> tapi hanya mengambil elemen pertama
+
+### bedasarkan id
+```js
+document.querySelector('#first-title')
+```
+
+### bedasarkan class
+```js
+document.querySelector('.title')
+```
+
+## query selector all
+method yg digunakan untuk memilih semua elemen yg cocok dengan CSS selector
+
+*contoh HTML*
+```html
+<h1 class="title">First</h1>
+<h1 class="title">Second</h1>
+<h1 class="title">Third</h1>
+```
+```js
+const titles = document.querySelectorAll('.title')
+```
+ 
