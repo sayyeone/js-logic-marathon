@@ -120,4 +120,92 @@ method yg digunakan untuk memilih semua elemen yg cocok dengan CSS selector
 ```js
 const titles = document.querySelectorAll('.title')
 ```
- 
+
+## menambahkan atribut pada elemen
+atribut = informasi tambahan yg ditulis di opening tag HTML
+```html
+<h1 id="title" class="heading">First Title</h1>
+```
+- _id = "title", class="heading"_ atribut
+
+
+### setAttribute()
+mengatur/menambahkan atribut
+```html
+<h1>Fourth Title</h1>
+```
+```js
+const title = document.querySelector('h1')
+title.setAttribute('class', 'title')
+```
+- pada elemen title, atur atribut class menjadi title
+
+### tanpa setAttribute
+langsung mengubah property milik element tersebut
+- dengan catatan sudah memilih elemen mana yg akan diubah
+
+```html
+<h1>First Title</h1>
+```
+```js
+const title = document.querySelector('h1')
+
+title.className = 'title'
+tittle.id = 'first-title'
+```
+
+### classList.add()
+properti HTML element yg berisi daftar class yg dimiliki elemen tersebut
+
+*misal HTML sudah memiliki*
+```html
+<h1 class="title">Hello</h1>
+```
+```js
+const title = document.querySelector('h1')
+title.classList.add('header')
+```
+- intinya menambahkan class baru tanpa menghapus class yg ada sebelumnya
+
+### classList.remove()
+menghapus class dari sebuah HTML element
+```html
+<h1 class="title header active">Hello</h1>
+```
+```js
+const title = document.querySelector('h1')
+title.classList.remove('active') // jika 1 elemen
+title.classList.remove('active, title') // jika banyak elemen
+```
+## textContent
+untuk mengakses/mengubah teks yg ada didalam element
+```html
+<h1>Hello</h1>
+```
+```js
+const title = document.querySelector('h1')
+title.textContent = 'Hello JavaScript'
+```
+
+# innerHTML
+untuk mengakses/mengubah isi HTML di dalam elemen
+- bisa mengubah dengan mengisi html nya secara langsung
+
+```html
+<h1>Hello</h1>
+```
+```js
+title.innerHTML = '<span>Hello JavaScript</span>'
+```
+
+## element.style
+untuk mengatur css langsung melalui js
+```html
+<h1>Hello</h1>
+```
+```js
+const title = document.querySelector('h1')
+
+title.style.color = 'red' // mengubah warna
+title.style.fontSize = '30px' // mengubah ukuran font
+```
