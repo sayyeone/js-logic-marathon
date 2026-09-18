@@ -1,6 +1,26 @@
 # DOM Document Object Model
 representasi dokumen HTML sebagai object yg bisa dimanipulasi menggunakan javascript
 
+## document
+objek yg merepresentasikan dokumen HTML yg sedang dibuka di browser
+
+## properti
+- informasi/data yg dimiliki oleh sebuah objek DOM
+```js
+document.title
+element.textContent
+element.id
+element.className
+collection.length
+```
+
+## method
+- function yg dimiliki object DOM dan digunakan untuk melakukan suatu operasi/tindakan
+```js
+document.getElementById("judul");
+```
+
+
 ## mengambil elemen bedasarkan tag
 kode html
 ```html

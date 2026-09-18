@@ -42,9 +42,18 @@
 // call()
 // console.log(call())
 
-function sapa() {
-    console.log("Halo");
-}
+// function sapa() {
+//     console.log("Halo");
+// }
 
-const hasil = sapa();
-console.log(hasil);
+// const hasil = sapa();
+// console.log(hasil);
+
+function halo() {
+    let mesage = "hello"
+    console.log(omg);
+    function printMsg() {
+        let omg = "adis"
+        console.log(mesage);
+    }
+}
