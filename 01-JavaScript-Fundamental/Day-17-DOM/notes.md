@@ -34,7 +34,7 @@ dengan cara:
 ```js
 const allTitels = document.getElementByTagName('h1') // hanya mengambil elemen pertama dari dokumen html nya
 ```
-- cari semua elemen yg tag-nya <h1> di halaman ini
+- cari semua elemen yg tag-nya h1 di halaman ini
 _document_ => seluruh halaman HTML
 
 **cara mengambil seluruh elemen**
@@ -96,7 +96,7 @@ document.querySelector('selector')
 ```js
 document.querySelector('h1')
 ```
-- cari elemen <h1> tapi hanya mengambil elemen pertama
+- cari elemen h1 tapi hanya mengambil elemen pertama
 
 ### bedasarkan id
 ```js
