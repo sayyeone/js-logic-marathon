@@ -29,7 +29,7 @@ kode html
 <h1>Third Title</h1>
 <h1>Fourth Title</h1>
 ```
-ambil semua elemen <h1>
+ambil semua elemen h1
 dengan cara: 
 ```js
 const allTitels = document.getElementByTagName('h1') // hanya mengambil elemen pertama dari dokumen html nya

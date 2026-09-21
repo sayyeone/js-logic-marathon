@@ -52,7 +52,7 @@ selectedElement.addEventListener('eventlistner', e => {
 })
 ```
 
-#### Click
+### Click
 
 Buat memasang event listener ke sebuah elemen, pertama kita pilih dulu elemennya, terus kita pasang method addEventListener-nya. Event listener-nya butuh jenis event dan fungsi callback sebagai argumen.
 
